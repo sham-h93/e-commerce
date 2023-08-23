@@ -1,39 +1,39 @@
 "use client";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@/redux/store";
-import NavItems from "./navItems";
-import { setOpen } from "@/redux/features/navBarSlice";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import NextArrow from "./nextArrow";
+import PrevArrow from "./prevArrow";
 
-const SliderMenu = () => {
-  const isOpen = useSelector((state: RootState) => state.navBar.isOpen);
-  const dispatch = useDispatch();
-
-  function handleSideMenuShow() {
-    dispatch(setOpen());
-  }
-
-  let sliderBackground: String = "";
-  let sliderPosition: String = "";
-
-  if (!isOpen) {
-    sliderBackground = `invisible`;
-    sliderPosition = `translate-x-1/3`;
-  }
-
-  return (
-    <div
-      className={`${sliderBackground} w-full h-full bg-background-grey-color z-10 bg-opacity-50 absolute transition-all duration-100`}
-      onClick={handleSideMenuShow}
-    >
-      <div
-        className={`${sliderPosition} w-2/3 md:w-1/3 flex transition-transform bg-white-color h-screen p-3`}
-      >
-        <ul className="flex flex-col  gap-3 pt-3 text-sm text-text-color ">
-          <NavItems />
+const SliderBanner = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    rtl: true,
+    appendDots: (dots: any) => (
+      <div className="bg-secundary-color p-0 w-full relative">
+        <ul className="bg-transparent-color selection:bg-white-color absolute bottom-8 left-0">
+          {dots}
         </ul>
       </div>
+    ),
+  };
+  return (
+    <div className="w-full bg-warning-color overflow-x-clip">
+      <Slider {...settings}>
+        <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
+          Slider 1
+        </div>
+        <div className="w-full h-[360px] bg-secundary-color flex items-center justify-center">
+          Slider 3
+        </div>
+      </Slider>
     </div>
   );
 };
 
-export default SliderMenu;
+export default SliderBanner;

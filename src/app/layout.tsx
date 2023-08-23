@@ -3,7 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Header from "../components/header";
 import localFont from "next/font/local";
-import SliderMenu from "@/components/slider";
+import SliderMenu from "@/components/slide";
 import { Provider } from "react-redux";
 import { store } from "@/redux/store";
 
