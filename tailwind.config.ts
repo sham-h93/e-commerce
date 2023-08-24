@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       "transparent-color": "transparent",
       "white-color": "#fff",
+      "grey-color": "#919492",
       "background-color": "#fafafa",
       "background-grey-color": "#F1F2F4",
       "primary-color": "#009688",

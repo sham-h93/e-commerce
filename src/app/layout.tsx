@@ -10,7 +10,7 @@ import { store } from "@/redux/store";
 const yekan = localFont({
   src: [
     {
-      path: "./../../public/fonts/iranyekanwebextrabold.woff",
+      path: "./../../public/fonts/iranyekanwebregular.woff2",
       style: "regular",
     },
   ],
