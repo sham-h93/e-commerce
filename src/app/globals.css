@@ -20,6 +20,20 @@ body {
   background-color: var(--background-color);
 }
 
+@layer utilities {
+  @variants responsive {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    /* Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -34,5 +48,21 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  background: #8f8f8f;
+}
+.scrollbar {
+  width: 8px;
+}
+
+.scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 4px;
+}
+
+.scrollbar-thumb:hover {
   background: #8f8f8f;
 }

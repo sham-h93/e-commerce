@@ -28,11 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fa" dir="rtl" className={`${yekan.className}`}>
+    <html lang="fa" dir="rtl" className={`${yekan.className} relative`}>
       <Provider store={store}>
-        <body className="relative">
-          <SliderMenu />
+        <body className="">
           <Header />
+          <SliderMenu />
           {children}
         </body>
       </Provider>

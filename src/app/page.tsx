@@ -1,5 +1,5 @@
 import { Product } from "@/components/offerItem";
-import OfferList from "@/components/offerList";
+import HorizontalProductList from "@/components/horizontalProductList";
 import SliderBanner from "@/components/slider";
 import Image from "next/image";
 
@@ -12,13 +12,13 @@ const p1: Product = {
   discount: "12",
 };
 
-const list = [p1, p1];
+const list = [p1, p1, p1, p1, p1, p1, p1, p1, p1, p1, p1, p1, p1, p1, p1, p1];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-6">
+    <main className="flex min-h-screen flex-col gap-6 pt-24">
       <SliderBanner />
-      <OfferList products={list} />
+      <HorizontalProductList products={list} />
     </main>
   );
 }

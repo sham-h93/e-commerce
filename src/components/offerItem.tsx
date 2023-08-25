@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Card from "./card";
 import Chip from "./chip";
 export interface Product {
   id: number;
@@ -14,8 +13,14 @@ const OfferItem = ({ product }: { product: Product }) => {
   const { image, name, previosPrice, price, discount } = product;
 
   return (
-    <div className="flex flex-col bg-white-color p-3 gap-1">
-      <Image src={image} alt="" width={128} height={128} />
+    <div className="flex flex-col w-[160px] bg-white-color p-3 gap-1">
+      <Image
+        className="self-center"
+        src={image}
+        alt=""
+        width={160}
+        height={160}
+      />
       <h2 className="text-base text-text-color">{name}</h2>
       <div className="flex flex-row justify-between items-center">
         <Chip text={`${discount}%`} />
