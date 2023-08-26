@@ -18,6 +18,7 @@ const OfferItem = ({ product }: { product: Product }) => {
         className="self-center"
         src={image}
         alt=""
+        layout="responsive"
         width={160}
         height={160}
       />
