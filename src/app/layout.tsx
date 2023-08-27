@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import SliderMenu from "@/components/slide";
 import { Provider } from "react-redux";
 import { store } from "@/redux/store";
+import Footer from "@/components/footer";
 
 const yekan = localFont({
   src: [
@@ -34,8 +35,10 @@ export default function RootLayout({
           <Header />
           <SliderMenu />
           {children}
+          <Footer />
         </body>
       </Provider>
     </html>
   );
 }
+``;
