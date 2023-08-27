@@ -2,12 +2,13 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import OfferItem, { Product } from "./offerItem";
+import OfferItem from "./offerItem";
 import Card from "./card";
 import CrircleButton from "./circleButton";
 import useOnScreen from "./hooks/useOnScreen";
+import { ProductItem } from "./types/productItem";
 
-const HorizontalProductList = ({ products }: { products: [] }) => {
+const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
   const listRef = useRef<HTMLUListElement | null>(null);
   const listFirstItemRef = useRef<HTMLLIElement | null>(null);
   const [liElementWidth, setLiElementWidth] = useState<number>(0);
@@ -25,7 +26,7 @@ const HorizontalProductList = ({ products }: { products: [] }) => {
   }, []);
 
   const handleProductList = () => {
-    return products.map((product: Product) => {
+    return products.map((product: ProductItem) => {
       return (
         <li key={product.id}>
           <Link href={""}>

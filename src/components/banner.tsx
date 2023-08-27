@@ -1,12 +1,6 @@
 import Image from "next/image";
 
-interface Image {
-  imageUrl: string;
-  width: number;
-  height: number;
-}
-
-const Banner = ({ imageUrl, width, height }: Image) => {
+const Banner = ({ imageUrl, width, height }: BannerImage) => {
   return (
     <Image
       className="rounded-2xl"

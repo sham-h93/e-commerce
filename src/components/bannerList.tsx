@@ -1,14 +1,9 @@
 import Link from "next/link";
 import Banner from "./banner";
 
-export interface Banner {
-  imageUrl: string;
-  link: string;
-}
-
-const BannerLists = ({ banners }: { banners: Array<Banner> }) => {
+const BannerLists = ({ banners }: { banners: Array<BannerImage> }) => {
   function handleBanners(): React.ReactNode {
-    return banners.map(({ imageUrl, link }, id) => {
+    return banners.map(({ imageUrl, width, height }, id) => {
       return (
         <li key={id}>
           <Link href={""}>

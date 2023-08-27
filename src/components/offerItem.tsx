@@ -1,15 +1,8 @@
 import Image from "next/image";
 import Chip from "./chip";
-export interface Product {
-  id: number;
-  image: string;
-  name: string;
-  previosPrice: string;
-  price: string;
-  discount: string;
-}
+import { ProductItem } from "./types/productItem";
 
-const OfferItem = ({ product }: { product: Product }) => {
+const OfferItem = ({ product }: { product: ProductItem }) => {
   const { image, name, previosPrice, price, discount } = product;
 
   return (
@@ -27,7 +20,7 @@ const OfferItem = ({ product }: { product: Product }) => {
         <Chip text={`${discount}%`} />
         <h3 className="text-xs text-grey-color justify-between">{`${previosPrice} تومان`}</h3>
       </div>
-      <h2 className="self-end text-sm text-base text-success-color">{`${price} تومان`}</h2>
+      <h2 className="self-end text-base text-success-color">{`${price} تومان`}</h2>
     </div>
   );
 };
