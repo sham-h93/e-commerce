@@ -2,6 +2,8 @@ import HorizontalProductList from "@/components/horizontalProductList";
 import SliderBanner from "@/components/slider";
 import BannerLists from "@/components/bannerList";
 import { ProductItem } from "@/components/types/productItem";
+import Categories from "@/components/categories";
+import digital from "./../../public/pictures/digital.png";
 
 export const p1: ProductItem = {
   id: 1,
@@ -24,12 +26,25 @@ for (let bannerItem = 0; bannerItem < 4; bannerItem++) {
   });
 }
 
+let categories = [
+  { text: "دیجیتال", image: digital },
+  { text: "دیجیتال", image: digital },
+  { text: "دیجیتال", image: digital },
+  { text: "دیجیتال", image: digital },
+  { text: "دیجیتال", image: digital },
+  { text: "دیجیتال", image: digital },
+  { text: "دیجیتال", image: digital },
+  { text: "دیجیتال", image: digital },
+  { text: "دیجیتال", image: digital },
+];
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-6 pt-24">
       <SliderBanner />
       <HorizontalProductList products={list} />
       <BannerLists banners={banners} />
+      <Categories categories={categories} />
     </main>
   );
 }

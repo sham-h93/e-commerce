@@ -13,7 +13,7 @@ const config: Config = {
       "grey-color": "#919492",
       "background-color": "#fafafa",
       "background-grey-color": "#F1F2F4",
-      "primary-color": "#009688",
+      "primary-color": "#8E59CF",
       "secundary-color": "#673ab7",
       "text-color": "#424242",
       "success-color": "#4caf50",

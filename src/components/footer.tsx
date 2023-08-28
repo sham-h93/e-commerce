@@ -15,7 +15,7 @@ const Footer = () => {
           <Logo />
           <p className="text-text-color">تلفن پشتیبانی ۲۱۲۱۲۱۲۱۲۱ - ۰۲۱</p>
         </div>
-        <div className="w-auto flex flex-col gap-3">
+        <div className=" flex flex-col gap-3 lg:items-start">
           <p className="text-text-color text-sm">همراه ما باشید</p>
           <div className="flex flex-row gap-3">
             <Link href={"/"}>

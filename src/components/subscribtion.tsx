@@ -4,8 +4,11 @@ import { Color } from "./enums/enums";
 
 const Subscribtion = () => {
   return (
-    <div className="w-full bg-background-grey-color p-3 gap-2 rounded-md h-12 flex flex-row items-center">
-      <form className="w-full" action="">
+    <div className="gap-2 flex flex-row items-center">
+      <form
+        className="w-full bg-background-grey-color p-2 rounded-lg "
+        action=""
+      >
         <input
           type="text"
           className="w-full bg-transparent-color focus:outline-none"
