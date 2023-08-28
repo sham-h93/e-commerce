@@ -2,11 +2,11 @@ import Image from "next/image";
 import Chip from "./chip";
 import { ProductItem } from "./types/productItem";
 
-const OfferItem = ({ product }: { product: ProductItem }) => {
+const SuggestItem = ({ product }: { product: ProductItem }) => {
   const { image, name, previosPrice, price, discount } = product;
 
   return (
-    <div className="flex flex-col w-[160px] bg-white-color p-3 gap-1">
+    <div className="flex flex-col min-w-[160px] bg-white-color p-3 gap-1 hover:shadow-lg shadow-inner hover:z-10">
       <Image
         className="self-center"
         src={image}
@@ -25,4 +25,4 @@ const OfferItem = ({ product }: { product: ProductItem }) => {
   );
 };
 
-export default OfferItem;
+export default SuggestItem;

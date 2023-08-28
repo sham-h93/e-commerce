@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import OfferItem from "./offerItem";
+import SuggestItem from "./suggestItem";
 import Card from "./card";
 import CrircleButton from "./circleButton";
 import useOnScreen from "./hooks/useOnScreen";
@@ -30,7 +30,7 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
       return (
         <li key={product.id}>
           <Link href={""}>
-            <OfferItem product={product} />
+            <SuggestItem product={product} />
           </Link>
         </li>
       );
