@@ -22,6 +22,9 @@ const config: Config = {
       "icon-color": "#3f4064",
     },
     extend: {
+      dropShadow: {
+        front: "0 0px 8px rgba(0, 0, 0, 0.25)",
+      },
       fontFamily: {
         yekan: ["var(--yekan-bakh)"],
       },

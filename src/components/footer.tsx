@@ -3,13 +3,13 @@ import Logo from "./logo";
 import Subscribtion from "./subscribtion";
 import { SiYoutube, SiInstagram, SiTwitter, SiAparat } from "react-icons/si";
 import Image from "next/image";
-import Enamad from "../../public/pictures/enamad.png";
-import Kasbokarmajazi from "../../public/pictures/kasbokarmajazi.png";
-import Samandehi from "../../public/pictures/samandehi.png";
+import Enamad from "../../public/images/enamad.png";
+import Kasbokarmajazi from "../../public/images/kasbokarmajazi.png";
+import Samandehi from "../../public/images/samandehi.png";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col outline outline-[1px] outline-grey-color">
+    <div className="flex flex-col">
       <div className=" md:grid md:grid-cols-2 mt-4 bg-white-color gap-3 p-4">
         <div className="w-auto flex flex-col gap-3">
           <Logo />

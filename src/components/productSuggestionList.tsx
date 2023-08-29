@@ -12,7 +12,7 @@ const ProductSuggestionList = ({
   const handleProductList = () => {
     return products.map((product) => {
       return (
-        <li key={product.id}>
+        <li className="col-auto" key={product.id}>
           <Link href={"/"}>
             <SuggestItem product={product} />
           </Link>
@@ -24,7 +24,7 @@ const ProductSuggestionList = ({
   return (
     <div className="flex mx-6 flex-col">
       <h2 className="text-2xl text-text-color m-3">{listTitle}</h2>
-      <ul className="grid grid-cols-2 md:grid-cols-4 divide-solid divide-grey-color lg:grid-cols-6">
+      <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-[1px]">
         {handleProductList()}
       </ul>
     </div>

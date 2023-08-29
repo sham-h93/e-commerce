@@ -14,11 +14,11 @@ const Header = () => {
   }
 
   return (
-    <div className="w-full grid grid-cols-3 px-2 pt-3 bg-white-color drop-shadow-md fixed z-10">
+    <div className="w-full grid grid-cols-3 px-2 pt-3 bg-white-color drop-shadow-md fixed z-50">
       <div className="col-span-3 lg:col-span-2 flex flex-row h-12 items-center gap-3">
         <Logo />
         <SearchBar />
-      </div>{" "}
+      </div>
       <div
         className="flex lg:hidden xl:hidden col-span-2 p-3"
         onClick={handleSideMenuShow}
