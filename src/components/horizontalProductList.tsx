@@ -11,8 +11,10 @@ import { ProductItem } from "./types/productItem";
 const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
   const listRef = useRef<HTMLUListElement | null>(null);
   const listFirstItemRef = useRef<HTMLLIElement | null>(null);
+  const listLastItemRef = useRef<HTMLLIElement | null>(null);
   const [liElementWidth, setLiElementWidth] = useState<number>(0);
-  const isVisible = useOnScreen(listFirstItemRef);
+  const isListFirstItemVisible = useOnScreen(listFirstItemRef);
+  const isListLastItemVisible = useOnScreen(listLastItemRef);
 
   useEffect(() => {
     const handleListEventListener = (event: any) => {};
@@ -26,19 +28,31 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
   }, []);
 
   const handleProductList = () => {
-    return products.map((product: ProductItem) => {
-      return (
-        <li key={product.id}>
-          <Link href={""}>
-            <SuggestItem product={product} />
-          </Link>
-        </li>
-      );
+    return products.map((product: ProductItem, index: number) => {
+      if (index == products.length - 1) {
+        return (
+          <li key={product.id} ref={listLastItemRef}>
+            <Link href={""}>
+              <SuggestItem product={product} />
+            </Link>
+          </li>
+        );
+      } else {
+        return (
+          <li key={product.id}>
+            <Link href={""}>
+              <SuggestItem product={product} />
+            </Link>
+          </li>
+        );
+      }
     });
   };
 
   function handleHorizontalScroll(toRight: boolean = true) {
     if (listRef.current != null) {
+      console.log(listRef.current);
+
       if (toRight) {
         listRef.current.scrollLeft += liElementWidth;
       } else {
@@ -48,16 +62,18 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
   }
 
   return (
-    <div className="mx-6 relative">
+    <div className="relative">
       <div className="w-full flex flex-row justify-between items-center rounded-full absolute top-1/2 bottom-1/2 left-3">
-        <div className={`flex ${isVisible && `invisible`} `}>
+        <div className={`flex ${isListFirstItemVisible && `invisible`} `}>
           <CrircleButton onClick={() => handleHorizontalScroll()}>
             <MdKeyboardArrowRight size={40} />
           </CrircleButton>
         </div>
-        <CrircleButton onClick={() => handleHorizontalScroll(false)}>
-          <MdKeyboardArrowLeft size={40} />
-        </CrircleButton>
+        <div className={`flex ${isListLastItemVisible && `invisible`} `}>
+          <CrircleButton onClick={() => handleHorizontalScroll(false)}>
+            <MdKeyboardArrowLeft size={40} />
+          </CrircleButton>
+        </div>
       </div>
       <Card color={`bg-primary-color`}>
         <ul
@@ -65,8 +81,8 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
           ref={listRef}
         >
           <li ref={listFirstItemRef}>
-            <div className="flex p-6 bg-warning-color h-full justify-center items-center">
-              <h2 className="text-4xl text-white-color">شگفت انگیز ها</h2>
+            <div className="w-48 flex p-6 h-full justify-center items-center">
+              <h2 className="text-4xl text-white-color"></h2>
             </div>
           </li>
           {handleProductList()}

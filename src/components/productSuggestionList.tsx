@@ -22,9 +22,9 @@ const ProductSuggestionList = ({
   };
 
   return (
-    <div className="flex mx-6 flex-col">
-      <h2 className="text-2xl text-text-color m-3">{listTitle}</h2>
-      <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-[1px]">
+    <div className="flex flex-col">
+      <h2 className="text-2xl text-text-color m-6 text-center">{listTitle}</h2>
+      <ul className="h-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-[1px]">
         {handleProductList()}
       </ul>
     </div>

@@ -25,14 +25,16 @@ const Header = () => {
       >
         <MdMenu size={24} color={"grey"} />
       </div>
-      <div className="flex flex-row gap-2 justify-center col-span-1 items-center justify-self-end">
-        <div className="me-3">
+      <div className=" flex flex-row gap-2 justify-center col-span-1 items-center justify-self-end">
+        <div className="p-2 outline outline-1 outline-grey-color rounded-md">
           <MdShoppingCart size={24} color={"grey"} />
         </div>
-        <MdLogin className="" size={24} color={"grey"} />
-        <Link className=" text-text-color" href={""}>
-          ورود/ثبت نام
-        </Link>
+        <div className="flex flex-row p-2 outline outline-1 outline-grey-color rounded-md gap-1">
+          <MdLogin className="" size={24} color={"grey"} />
+          <Link className=" text-text-color" href={"/"}>
+            ورود/ثبت نام
+          </Link>
+        </div>
       </div>
       <div className="hidden lg:flex col-span-3 lg:col-span-2 items-center ">
         <Nav />

@@ -61,7 +61,7 @@ const list = [
   {
     id: 6,
     image: laptop,
-    name: "نام محصول",
+    name: "لپ تاپ 15.6 اینچی ایسوس مدل Vivobook R565EP-EJ629-i7 24GB 1HDD 1SSD MX330 - کاستوم شده",
     previosPrice: "120.000",
     price: "109.000",
     discount: "12",
@@ -111,20 +111,19 @@ let categories = [
   { text: "دیجیتال", image: digital },
   { text: "دیجیتال", image: digital },
   { text: "دیجیتال", image: digital },
-  { text: "دیجیتال", image: digital },
 ];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-6 pt-24">
+    <main className="mx-0 flex min-h-screen flex-col pt-24 gap-6">
       <SliderBanner />
-      <HorizontalProductList products={list} />
-      <BannerLists banners={banners} />
-      <Categories categories={categories} />
-      <div className=" h-32 bg-warning-color mx-4 rounded-2xl">
-        {/* <Image src={} fill={} /> */}
+      <div className="xl:max-w-7xl xl:mx-0 xl:self-center flex flex-col gap-6">
+        <HorizontalProductList products={list} />
+        <BannerLists banners={banners} />
+        <Categories categories={categories} />
+        <div className=" h-32 bg-warning-color rounded-2xl"></div>
+        <ProductSuggestionList listTitle="پر بازدیدترین ها" products={list} />
       </div>
-      <ProductSuggestionList listTitle="پر بازدیدترین ها" products={list} />
     </main>
   );
 }

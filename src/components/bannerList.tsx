@@ -15,9 +15,7 @@ const BannerLists = ({ banners }: { banners: Array<BannerImage> }) => {
   }
 
   return (
-    <ul className="grid grid-cols-2 lg:grid-cols-4 mx-6 gap-3">
-      {handleBanners()}
-    </ul>
+    <ul className="grid grid-cols-2 lg:grid-cols-4 gap-3">{handleBanners()}</ul>
   );
 };
 

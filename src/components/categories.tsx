@@ -19,9 +19,9 @@ const Categories = ({ categories }: { categories: CategoryItem[] }) => {
   }
 
   return (
-    <div className="flex mx-6 flex-col justify-center items-center gap-4">
+    <div className="flex flex-col justify-center items-center gap-4">
       <h3 className="text-2xl text-text-color m-3">دسته بندی ها</h3>
-      <ul className="w-full flex flex-row flex-wrap gap-14 items-center justify-center">
+      <ul className="flex flex-row flex-wrap gap-14 items-center justify-center">
         {handleCategories()}
       </ul>
     </div>

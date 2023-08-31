@@ -6,9 +6,9 @@ const SuggestItem = ({ product }: { product: ProductItem }) => {
   const { image, name, previosPrice, price, discount } = product;
 
   return (
-    <div className="flex flex-col relative bg-white-color p-3 hover:drop-shadow-front hover:z-10">
+    <div className="w-48 min-w-full flex flex-col gap-2 relative bg-white-color p-3 hover:drop-shadow-front hover:z-10">
       <Image className="self-center" src={image} alt="" layout="responsive" />
-      <h2 className="text-base text-text-color">{name}</h2>
+      <h2 className="text-base text-text-color line-clamp-1">{name}</h2>
       <div className="flex flex-row justify-between items-center">
         <Chip text={`${discount}%`} />
         <h3 className="text-xs text-grey-color justify-between">{`${previosPrice} تومان`}</h3>
