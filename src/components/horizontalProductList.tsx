@@ -80,7 +80,7 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
         </div>
       </div>
       <ul
-        className="flex flex-row gap-3 p-3 scroll-smooth overflow-x-scroll no-scrollbar"
+        className="flex flex-row p-3 scroll-smooth overflow-x-scroll no-scrollbar"
         ref={listRef}
       >
         {handleProductList()}

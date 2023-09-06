@@ -8,7 +8,7 @@ const ProductItem = ({ product }: { product: ProductItem }) => {
 
   return (
     <Link href={`/product/${product.id}`}>
-      <div className="w-48 min-w-full flex flex-col gap-2 relative bg-white-color p-3 hover:drop-shadow-front hover:z-10 transition-all">
+      <div className="w-56 min-w-full flex flex-col gap-2 relative bg-white-color p-3 hover:drop-shadow-front hover:z-10 transition-all">
         <Image className="self-center" src={image} alt="" layout="responsive" />
         <h2 className="text-base h-12 text-text-color line-clamp-2">{name} </h2>
         <div className="flex flex-row justify-between items-center">

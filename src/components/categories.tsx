@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { CategoryItem } from "./types/categoryItem";
 import CategoryItemComponent from "./categoryItem";
+import Title from "./title";
+import Card from "./card";
 
 const Categories = ({ categories }: { categories: CategoryItem[] }) => {
   function handleCategories() {
@@ -19,12 +21,12 @@ const Categories = ({ categories }: { categories: CategoryItem[] }) => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4">
-      <h3 className="text-2xl text-text-color m-3">دسته بندی ها</h3>
-      <ul className="flex flex-row flex-wrap gap-14 items-center justify-center">
+    <Card color={"bg-white-color"} outline={"outline"}>
+      <Title text="دسته بندی ها" />
+      <ul className="w-full flex flex-row flex-wrap gap-14 items-center justify-center">
         {handleCategories()}
       </ul>
-    </div>
+    </Card>
   );
 };
 

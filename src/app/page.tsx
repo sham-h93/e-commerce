@@ -117,9 +117,8 @@ export default function Home() {
   return (
     <main className="mx-0 flex min-h-screen flex-col pt-24 gap-6">
       <SliderBanner />
-      <div className="xl:max-w-7xl xl:mx-0 xl:self-center flex flex-col gap-6">
+      <div className="px-4 xl:max-w-7xl xl:mx-0 xl:self-center flex flex-col gap-6">
         <HorizontalProductList products={list} />
-        <BannerLists banners={banners} />
         <Categories categories={categories} />
         <div className=" h-32 bg-warning-color rounded-2xl"></div>
         <ProductSuggestionList listTitle="پر بازدیدترین ها" products={list} />
