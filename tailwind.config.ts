@@ -16,7 +16,7 @@ const config: Config = {
       "grey-color": "#919492",
       "background-color": "#fafafa",
       "background-grey-color": "#F1F2F4",
-      "primary-color": "#8E59CF",
+      "primary-color": "#80b918",
       "secundary-color": "#673ab7",
       "text-color": "#424242",
       "success-color": "#4caf50",
@@ -28,6 +28,7 @@ const config: Config = {
       dropShadow: {
         front: "0 0px 8px rgba(0, 0, 0, 0.25)",
       },
+
       fontFamily: {
         yekan: ["var(--yekan-bakh)"],
       },

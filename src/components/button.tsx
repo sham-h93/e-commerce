@@ -1,7 +1,15 @@
 import { Color } from "./enums/enums";
 import { ButtonProps } from "./types/button";
 
-const Button = ({ color, text, onClick, disabled, children }: ButtonProps) => {
+const Button = ({
+  width,
+  height,
+  color,
+  text,
+  onClick,
+  disabled,
+  children,
+}: ButtonProps) => {
   let bgColor;
   switch (color) {
     case Color.Primary: {
@@ -25,7 +33,7 @@ const Button = ({ color, text, onClick, disabled, children }: ButtonProps) => {
 
   return (
     <button
-      className={`${bgColor} text-base px-4 py-2 h-10 flex flex-row gap-3 items-center justify-center rounded-lg`}
+      className={`${bgColor} ${width} ${height} text-base px-4 py-2 h-10 flex flex-row gap-3 items-center justify-center rounded-lg`}
       onClick={onClick}
       disabled={disabled}
     >

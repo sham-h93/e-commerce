@@ -1,5 +1,5 @@
 const Logo = () => {
-  return <h1 className="text-primary-color text-3xl">LOGO</h1>;
+  return <h1 className="text-white-color text-3xl font-black px-2">LOGO</h1>;
 };
 
 export default Logo;

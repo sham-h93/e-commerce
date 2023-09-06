@@ -1,0 +1,286 @@
+{
+  "category": [
+    {
+      "id": "d1",
+      "title": "لپ تاپ",
+      "slug": "laptop-products",
+      "subCategory": {
+        "id": "laptop",
+        "brands": {
+          "dell": "دل",
+          "hp": "اچ پی",
+          "lenovo": "لنوو",
+          "apple": "اپل",
+          "asus": "ایسوس",
+          "acer": "ایسز",
+          "msi": "ام اس آی",
+          "razer": "ریزر",
+          "microsoft": "مایکروسافت",
+          "samsung": "سامسونگ",
+          "toshiba": "توشیبا",
+          "fujitsu": "فوجیتسو",
+          "alienware": "آلینویر",
+          "huawei": "هواوی"
+        },
+        "parts": {}
+      }
+    },
+    {
+      "id": "d2",
+      "title": "موبایل",
+      "slug": "mobile-products",
+      "subCategory": {
+        "id": "mobile",
+        "brands": {
+          "apple": "اپل",
+          "samsung ": "سامسونگ",
+          "huawei": "هواوی",
+          "xiaomi": "شیائومی",
+          "oppo": "اوپو",
+          "vivo": "ویوو",
+          "lg": "ال جی",
+          "motorola": "موتورولا",
+          "nokia": "نوکیا",
+          "sony": "سونی",
+          "hTC": "اچ تی سی",
+          "lenovo": "لنوو",
+          "zte": "زد تی ای",
+          "asus": "ایسوس",
+          "blackBerry": "بلک بری"
+        },
+        "parts": {}
+      }
+    },
+    {
+      "id": "d3",
+      "title": "کامپیوتر",
+      "slug": "pc-products",
+      "subCategory": {
+        "id": "pc",
+        "brands": {
+          "apple": "اپل",
+          "dell": "دل",
+          "asus": "ایسوس",
+          "hp": "اچ پی",
+          "lenovo": "لنوو",
+          "samsung": "سامسونگ",
+          "toshiba": "توشیبا"
+        },
+        "parts": {
+          "cpu": "پردازنده",
+          "motherboard": "مادربرد",
+          "ram": "رم",
+          "hdd": "هارد دیسک(HDD)",
+          "ssd": "دیسک جامد(SSD)",
+          "gpu": "کارت گرافیک",
+          "power": "منبع تغذیه(Power)",
+          "cooling": "خنک کننده",
+          "optical-drive": "درایو نوری",
+          "sound-card": "کارت صدا",
+          "network-card": "کارت شبکه",
+          "keyboard": "کیبورد",
+          "mouse": "ماوس",
+          "monitor": "مانیتور",
+          "speakers": "اسپیکر"
+        }
+      }
+    },
+    {
+      "id": "d4",
+      "title": "تجهیزات جانبی",
+      "slug": "accesories-products",
+      "subCategory": {
+        "id": "accesories",
+        "brands": {
+          "apple": "انکر",
+          "samsung": "سامسونگ",
+          "anker": "انکر",
+          "remax": "ریمکس",
+          "belkin": "بلکین",
+          "qcy": "کیو سی وای",
+          "jbl": "جی بی ال",
+          "sony": "سونی"
+        },
+        "parts": {
+          "mobile-charger": "سارژر",
+          "mobile-portable-charger": "شارژر همراه (پاور بانک)",
+          "mobile-cable": "کابل شارژ",
+          "mobile-case": "کاور موبایل",
+          "mobile-screen-protector": "محافظ صفحه نمایش",
+          "mobile-headphones-earpods": "هدفون و هندزفری",
+          "mobile-bluetooth-speaker": "اسپیکر بیسیم",
+          "mobile-wireless-earbuds": "هندزفری بیسیم"
+        }
+      }
+    },
+    {
+      "id": "d5",
+      "title": "تلویزیون",
+      "slug": "tv-products",
+      "subCategory": {
+        "id": "tv",
+        "brands": {
+          "samsung": "سامسونگ",
+          "lg": "ال جی",
+          "sony": "سونی",
+          "panasonic": "پاناسونیک",
+          "vizio": "ویزیو",
+          "tcl": "تی سی ال",
+          "hisense": "هایسنس",
+          "philips": "فیلیپس",
+          "sharp": "شارپ",
+          "toshiba": "توشیبا"
+        },
+        "parts": {}
+      }
+    },
+    {
+      "id": "d6",
+      "title": "دوربین",
+      "slug": "camera-products",
+      "subCategory": {
+        "id": "camera",
+        "brands": {
+          "canon": "کنون",
+          "nikon": "نیکون",
+          "sony": "سونی",
+          "fujifilm": "فوجی فیلم",
+          "olympus": "اولیمپوس",
+          "panasonic": "پاناسونیک",
+          "leica": "لیسا",
+          "pentax": "پینتاکس",
+          "sigma": "زیگما",
+          "gopro": "گو پرو"
+        },
+        "parts": {}
+      }
+    },
+    {
+      "id": "d7",
+      "title": "ساعت و مچ بند هوشمند",
+      "slug": "smartwatch-products",
+      "subCategory": {
+        "id": "smartwatch",
+        "brands": {
+          "apple": "اپل",
+          "samsung ": "سامسونگ",
+          "huawei": "هواوی",
+          "xiaomi": "شیائومی"
+        },
+        "parts": {}
+      }
+    },
+    {
+      "id": "d8",
+      "title": "هدفون، هدست و میکروفون",
+      "slug": "headphones-microphone-products",
+      "subCategory": {
+        "id": "headphones-microphones",
+        "brands": {
+          "apple": "اپل",
+          "samsung ": "سامسونگ",
+          "xiaomi": "شیائومی",
+          "lg": "ال جی",
+          "lenovo": "لنوو",
+          "asus": "ایسوس",
+          "anker": "انکر",
+          "remax": "ریمکس",
+          "belkin": "بلکین",
+          "qcy": "کیو سی وای",
+          "jbl": "جی بی ال"
+        },
+        "parts": {}
+      }
+    },
+    {
+      "id": "d9",
+      "title": "اسپیکر باسیم و بی سیم",
+      "slug": "speakers-products",
+      "subCategory": {
+        "id": "speakers",
+        "brands": {
+          "jbl": "جی بی ال",
+          "sony": "سونی",
+          "anker": "انکر",
+          "lenovo": "لنوو",
+          "xiaomi": "شیائومی",
+          "remax": "ریمکس",
+          "belkin": "بلکین",
+          "qcy": "کیو سی وای"
+        },
+        "parts": {}
+      }
+    },
+    {
+      "id": "d10",
+      "title": "کنسول بازی",
+      "slug": "game-consols-products",
+      "subCategory": {
+        "id": "gameconsols",
+        "brands": {
+          "sony": "سونی",
+          "microsoft": "مایکروسافت",
+          "nintendo-switch": "نینتندو سویچ",
+          "sega": "سگا",
+          "atari": "آتاری",
+          "panasonic": "پاناسونیک",
+          "philips": "فیلیپس",
+          "neo-geo": "نئو جئو",
+          "turbo-grafx": "توربو گرافیکس",
+          "commodore-amiga": "کومودور امیگا"
+        },
+        "parts": {}
+      }
+    }
+  ],
+  "barnds": {
+    "apple": {
+      "name": "اپل",
+      "logo": ""
+    },
+    "samsung": {
+      "name": "سامسونگ",
+      "logo": ""
+    },
+    "xiaomi": {
+      "name": "شیائومی",
+      "logo": ""
+    },
+    "lg": {
+      "name": "ال جی",
+      "logo": ""
+    },
+    "asus": {
+      "name": "ایسوس",
+      "logo": ""
+    },
+    "dell": {
+      "name": "دل",
+      "logo": ""
+    },
+    "hp": {
+      "name": "اچ پی",
+      "logo": ""
+    }
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت",
+      "latinName": "Apple iPhone 13 CH Dual SIM 128GB And 4GB RAM Mobile Phone",
+      "slug": "apple-iphone13-ch-dual-sim",
+      "categoryId": "d1",
+      "subCategoryId": "mobile",
+      "brand": "اپل",
+      "price": "49900000",
+      "stock": "4",
+      "sellCount": "76",
+      "description": "",
+      "thumbnail": "",
+      "offer": true,
+      "createdAt": "1693776646",
+      "updatedAt": "1693776646"
+    }
+  ],
+  "comments": []
+}

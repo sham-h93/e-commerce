@@ -14,29 +14,29 @@ const Header = () => {
   }
 
   return (
-    <div className="w-full grid grid-cols-3 px-2 pt-3 bg-white-color drop-shadow-md fixed z-50">
+    <div className="w-full grid grid-cols-3 pt-3 gap-3 bg-primary-color text-white-color drop-shadow-md fixed z-50">
       <div className="col-span-3 lg:col-span-2 flex flex-row h-12 items-center gap-3">
         <Logo />
         <SearchBar />
       </div>
       <div
-        className="flex lg:hidden xl:hidden col-span-2 p-3"
+        className="flex lg:hidden xl:hidden col-span-1 md:col-span-2 p-3"
         onClick={handleSideMenuShow}
       >
-        <MdMenu size={24} color={"grey"} />
+        <MdMenu size={24} color={"white"} />
       </div>
-      <div className=" flex flex-row gap-2 justify-center col-span-1 items-center justify-self-end">
-        <div className="p-2 outline outline-1 outline-grey-color rounded-md">
-          <MdShoppingCart size={24} color={"grey"} />
+      <div className=" flex flex-row gap-2 justify-center col-span-2 md:col-span-1  items-center justify-self-end">
+        <div className="flex flex-row p-2 divide-x-2">
+          <MdShoppingCart size={24} color={"white"} />
         </div>
-        <div className="flex flex-row p-2 outline outline-1 outline-grey-color rounded-md gap-1">
-          <MdLogin className="" size={24} color={"grey"} />
-          <Link className=" text-text-color" href={"/"}>
+        <div className="flex flex-row p-2 rounded-md gap-1">
+          <MdLogin className="" size={24} color={"white"} />
+          <Link className=" text-white-color" href={"/"}>
             ورود/ثبت نام
           </Link>
         </div>
       </div>
-      <div className="hidden lg:flex col-span-3 lg:col-span-2 items-center ">
+      <div className="flex bg-white-color col-span-3 lg:col-span-3 items-center px-2">
         <Nav />
       </div>
     </div>

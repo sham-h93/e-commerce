@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import SuggestItem from "./suggestItem";
@@ -32,17 +31,13 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
       if (index == products.length - 1) {
         return (
           <li key={product.id} ref={listLastItemRef}>
-            <Link href={""}>
-              <SuggestItem product={product} />
-            </Link>
+            <SuggestItem product={product} />
           </li>
         );
       } else {
         return (
           <li key={product.id}>
-            <Link href={""}>
-              <SuggestItem product={product} />
-            </Link>
+            <SuggestItem product={product} />
           </li>
         );
       }
