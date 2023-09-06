@@ -13,7 +13,7 @@ const config: Config = {
     colors: {
       "transparent-color": "transparent",
       "white-color": "#fff",
-      "grey-color": "#919492",
+      "grey-color": "#e0e0e6",
       "background-color": "#fafafa",
       "background-grey-color": "#F1F2F4",
       "primary-color": "#80b918",
