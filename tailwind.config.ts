@@ -15,6 +15,7 @@ const config: Config = {
       "white-color": "#fff",
       "grey-color": "#e0e0e6",
       "background-color": "#fafafa",
+      "dark-background-color": "#555555",
       "background-grey-color": "#F1F2F4",
       "primary-color": "#80b918",
       "secundary-color": "#673ab7",

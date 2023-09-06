@@ -16,7 +16,7 @@ const Subscribtion = () => {
         />
       </form>
       <Button
-        color={Color.Primary}
+        color={Color.Dark}
         text={"ثبت"}
         onClick={() => {
           return alert("Hi");

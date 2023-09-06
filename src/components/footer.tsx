@@ -10,81 +10,93 @@ import Samandehi from "../../public/images/samandehi.png";
 const Footer = () => {
   return (
     <div className="flex flex-col">
-      <div className=" md:grid md:grid-cols-2 mt-4 bg-white-color gap-3 p-4">
-        <div className="w-auto flex flex-col gap-3">
+      <div className=" md:grid md:grid-cols-2 lg:grid-cols-3 mt-4 bg-primary-color gap-4 p-4">
+        <div className="w-auto flex flex-col gap-4 lg:col-span-2">
           <Logo />
-          <p className="text-text-color">تلفن پشتیبانی ۲۱۲۱۲۱۲۱۲۱ - ۰۲۱</p>
+          <p className="text-white-color">تلفن پشتیبانی ۲۱۲۱۲۱۲۱۲۱ - ۰۲۱</p>
         </div>
-        <div className=" flex flex-col gap-3 lg:items-start">
-          <p className="text-text-color text-sm">همراه ما باشید</p>
+        <div className=" flex flex-col gap-4 lg:items-start">
+          <p className="text-white-color text-sm">همراه ما باشید</p>
           <div className="flex flex-row gap-3">
             <Link href={"/"}>
-              <SiYoutube color={"grey"} size={24} />
+              <SiYoutube color={"white"} size={24} />
             </Link>
             <Link href={"/"}>
-              <SiInstagram color={"grey"} size={24} />
+              <SiInstagram color={"white"} size={24} />
             </Link>
             <Link href={"/"}>
-              <SiTwitter color={"grey"} size={24} />
+              <SiTwitter color={"white"} size={24} />
             </Link>
             <Link href={"/"}>
-              <SiAparat color={"grey"} size={24} />
+              <SiAparat color={"white"} size={24} />
             </Link>
-            <p className="text-xs text-text-color">دنبال کنید!</p>
+            <p className="text-xs text-white-color">دنبال کنید!</p>
           </div>
           <Subscribtion />
         </div>
-        <div className="w-auto grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="w-auto grid md:grid-cols-2 lg:grid-cols-3 lg:col-span-2 gap-4 py-4 md:py-0">
           <div className="flex flex-col gap-3">
-            <h4 className="text-lg">خدمات مشتریان</h4>
-            <Link className="text-sm text-text-color" href={"/"}>
+            <h4 className="text-lg text-white-color">خدمات مشتریان</h4>
+            <Link className="text-sm text-white-color" href={"/"}>
               پرسش های متداول
             </Link>
-            <Link className="text-sm text-text-color" href={"/"}>
+            <Link className="text-sm text-white-color" href={"/"}>
               نحوه بازگشت کالا
             </Link>
-            <Link className="text-sm text-text-color" href={"/"}>
+            <Link className="text-sm text-white-color" href={"/"}>
               شرایط استفاده
             </Link>
-            <Link className="text-sm text-text-color" href={"/"}>
+            <Link className="text-sm text-white-color" href={"/"}>
               حریم خصوصی
             </Link>
           </div>
-          <div className="flex flex-col gap-3">
-            <h4 className="text-lg">راهنمای خرید</h4>
-            <Link className="text-sm text-text-color" href={"/"}>
+          <div className="flex flex-col gap-4">
+            <h4 className="text-lg text-white-color">راهنمای خرید</h4>
+            <Link className="text-sm text-white-color" href={"/"}>
               ثبت سفارش
             </Link>
-            <Link className="text-sm text-text-color" href={"/"}>
+            <Link className="text-sm text-white-color" href={"/"}>
               ارسال مسفارش
             </Link>
-            <Link className="text-sm text-text-color" href={"/"}>
+            <Link className="text-sm text-white-color" href={"/"}>
+              پرداخت
+            </Link>
+          </div>
+          <div className="flex flex-col gap-4">
+            <h4 className="text-lg text-white-color">راهنمای خرید</h4>
+            <Link className="text-sm text-white-color" href={"/"}>
+              ثبت سفارش
+            </Link>
+            <Link className="text-sm text-white-color" href={"/"}>
+              ارسال مسفارش
+            </Link>
+            <Link className="text-sm text-white-color" href={"/"}>
               پرداخت
             </Link>
           </div>
         </div>
-        <div className="w-auto flex flex-row gap-3">
-          <Link className="text-sm text-text-color" href={"/"}>
+        <div className="w-full md:w-auto flex flex-row gap-4">
+          <Link className=" text-sm text-white-color" href={"/"}>
             <Image
-              className="bg-background-color p-3 rounded-xl"
+              className="h-full md:h-24 bg-background-color p-3 rounded-xl"
               src={Enamad}
               width={84}
               height={84}
               alt={"enamad"}
             />
           </Link>
-          <Link className="text-sm text-text-color" href={"/"}>
+          <Link className="text-sm text-white-color" href={"/"}>
             <Image
-              className="bg-background-color p-3 rounded-xl"
+              className="h-full md:h-24 bg-background-color p-3 rounded-xl"
               src={Kasbokarmajazi}
               width={84}
               height={84}
               alt={"kasbokarmajazi"}
             />
           </Link>
-          <Link className="text-sm text-text-color" href={"/"}>
+          <Link className="text-sm text-white-color" href={"/"}>
             <Image
-              className="bg-background-color p-3 rounded-xl"
+              className="h-full md:h-24 bg-background-color p-3 rounded-xl"
               src={Samandehi}
               width={84}
               height={84}
@@ -92,9 +104,9 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div className="w-auto flex flex-col gap- mt-6  col-span-2">
-          <h2 className="text-base">فروشگاه اینترنتی...</h2>
-          <p className="text-md text-text-color">
+        {/* <div className="w-auto flex flex-col gap- mt-6  col-span-2">
+          <h2 className="text-xl text-white-color">فروشگاه اینترنتی...</h2>
+          <p className="text-md text-white-color">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
             استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
@@ -107,10 +119,10 @@ const Footer = () => {
             حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
             طراحی اساسا مورد استفاده قرار گیرد.
           </p>
-        </div>
+        </div> */}
       </div>
-      <div className="bg-background-grey-color flex flex-col gap- mt-6  col-span-2 p-6 items-center justify-center">
-        <p className="text-sm text-text-color">
+      <div className="bg-dark-background-color flex flex-col col-span-2 p-6 items-center justify-center">
+        <p className="text-sm text-white-color">
           برای استفاده از مطالب سایت، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست.
           تمام حقوق اين وب‌سايت نیز برای شرکت --- محفوظ است.
         </p>

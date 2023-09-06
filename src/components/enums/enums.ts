@@ -5,4 +5,5 @@ export enum Color {
   Success,
   Error,
   Grey,
+  Dark,
 }

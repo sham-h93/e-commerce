@@ -24,6 +24,10 @@ const Button = ({
       bgColor = "bg-error-color text-white-color";
       break;
     }
+    case Color.Dark: {
+      bgColor = "bg-dark-background-color text-white-color";
+      break;
+    }
 
     default: {
       bgColor = "bg-primary-color text-white-color";
