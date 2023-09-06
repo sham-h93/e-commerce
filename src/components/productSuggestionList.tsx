@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { ProductItem } from "./types/productItem";
-import SuggestItem from "./suggestItem";
+import ProductItem from "./productItem";
 
 const ProductSuggestionList = ({
   products,
@@ -13,9 +12,7 @@ const ProductSuggestionList = ({
     return products.map((product) => {
       return (
         <li className="col-auto" key={product.id}>
-          <Link href={"/"}>
-            <SuggestItem product={product} />
-          </Link>
+          <ProductItem product={product} />
         </li>
       );
     });

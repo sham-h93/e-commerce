@@ -1,6 +1,6 @@
 const Chip = ({ text }: { text: String }) => {
   return (
-    <div className="bg-error-color w-fit text-xs rounded-full p-1 text-white-color">
+    <div className="flex items-center justify-center bg-error-color w-fit text-xs rounded-full px-2 py-1 text-center text-white-color">
       {text}
     </div>
   );

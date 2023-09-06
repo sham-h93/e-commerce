@@ -1,11 +1,10 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import SuggestItem from "./suggestItem";
-import Card from "./card";
+import ProductItem from "./productItem";
 import CrircleButton from "./circleButton";
 import useOnScreen from "./hooks/useOnScreen";
-import { ProductItem } from "./types/productItem";
+import Title from "./title";
 
 const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
   const listRef = useRef<HTMLUListElement | null>(null);
@@ -28,16 +27,23 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
 
   const handleProductList = () => {
     return products.map((product: ProductItem, index: number) => {
+      if (index == 0) {
+        return (
+          <li key={product.id} ref={listFirstItemRef}>
+            <ProductItem product={product} />
+          </li>
+        );
+      }
       if (index == products.length - 1) {
         return (
           <li key={product.id} ref={listLastItemRef}>
-            <SuggestItem product={product} />
+            <ProductItem product={product} />
           </li>
         );
       } else {
         return (
           <li key={product.id}>
-            <SuggestItem product={product} />
+            <ProductItem product={product} />
           </li>
         );
       }
@@ -57,32 +63,28 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
   }
 
   return (
-    <div className="relative">
-      <div className="w-full flex flex-row justify-between items-center rounded-full absolute top-1/2 bottom-1/2 left-3">
+    <div className="flex flex-col gap-2 relative bg-white-color outline outline-1 outline-grey-color rounded-2xl py-6">
+      <div className="px-6">
+        <Title text={"پیشنهادات شگفت انگیز"} />
+      </div>
+      <div className="w-full flex bg-primary-color z-30 flex-row px-4 justify-between items-center rounded-full absolute top-1/2 bottom-1/2">
         <div className={`flex ${isListFirstItemVisible && `invisible`} `}>
           <CrircleButton onClick={() => handleHorizontalScroll()}>
-            <MdKeyboardArrowRight size={40} />
+            <MdKeyboardArrowRight size={40} color={"white"} />
           </CrircleButton>
         </div>
         <div className={`flex ${isListLastItemVisible && `invisible`} `}>
           <CrircleButton onClick={() => handleHorizontalScroll(false)}>
-            <MdKeyboardArrowLeft size={40} />
+            <MdKeyboardArrowLeft size={40} color={"white"} />
           </CrircleButton>
         </div>
       </div>
-      <Card color={`bg-primary-color`}>
-        <ul
-          className="flex flex-row gap-3 p-3 scroll-smooth overflow-x-scroll no-scrollbar"
-          ref={listRef}
-        >
-          <li ref={listFirstItemRef}>
-            <div className="w-48 flex p-6 h-full justify-center items-center">
-              <h2 className="text-4xl text-white-color"></h2>
-            </div>
-          </li>
-          {handleProductList()}
-        </ul>
-      </Card>
+      <ul
+        className="flex flex-row gap-3 p-3 scroll-smooth overflow-x-scroll no-scrollbar"
+        ref={listRef}
+      >
+        {handleProductList()}
+      </ul>
     </div>
   );
 };

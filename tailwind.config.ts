@@ -18,7 +18,7 @@ const config: Config = {
       "background-grey-color": "#F1F2F4",
       "primary-color": "#80b918",
       "secundary-color": "#673ab7",
-      "text-color": "#424242",
+      "text-color": "#555555",
       "success-color": "#4caf50",
       "warning-color": "#ffc107",
       "error-color": "#f44336",

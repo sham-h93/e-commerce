@@ -1,7 +1,7 @@
 import HorizontalProductList from "@/components/horizontalProductList";
 import SliderBanner from "@/components/slider";
 import BannerLists from "@/components/bannerList";
-import { ProductItem } from "@/components/types/productItem";
+import { ProductItem } from "@/components/types/productItemType";
 import Categories from "@/components/categories";
 import digital from "./../../public/images/digital.png";
 import charger from "./../../public/images/charger.png";
