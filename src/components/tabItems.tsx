@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const NavItems = () => {
+const TabItems = () => {
   return (
     <>
       <li className="pb-2 hover:text-primary-color hover:border-b-2 transition-transform">
@@ -21,4 +21,4 @@ const NavItems = () => {
     </>
   );
 };
-export default NavItems;
+export default TabItems;

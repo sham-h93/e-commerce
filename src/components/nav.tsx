@@ -1,9 +1,9 @@
-import NavItems from "./navItems";
+import TabItems from "./tabItems";
 
 const Nav = () => {
   return (
     <ul className="flex flex-row gap-3 pt-3 text-sm text-text-color ">
-      <NavItems />
+      <TabItems />
     </ul>
   );
 };

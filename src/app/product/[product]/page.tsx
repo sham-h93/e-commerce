@@ -2,14 +2,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { MdStar } from "react-icons/md";
-import Button from "@/components/button";
-import { Color } from "@/components/enums/enums";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-
-import Chip from "@/components/chip";
-import Categories from "@/components/categories";
-import digital from "./../../../../public/images/digital.png";
 import charger from "./../../../../public/images/charger.png";
 import headphone from "./../../../../public/images/headphone.png";
 import iphone from "./../../../../public/images/iphone.png";
@@ -17,11 +10,12 @@ import laptop from "./../../../../public/images/laptop.png";
 import nokia from "./../../../../public/images/nokia.png";
 import samsung from "./../../../../public/images/samsung.png";
 import smartwatch from "./../../../../public/images/smartwatch.png";
-import ProductSuggestionList from "@/components/productSuggestionList";
 import HorizontalProductList from "@/components/horizontalProductList";
 import "./../../../../styles/product.css";
-import CrircleButton from "@/components/circleButton";
 import ShoppingCard from "@/components/shoppingCard";
+import ProductDetail from "@/components/productDetail";
+import Title from "@/components/title";
+import Comments from "@/components/comments";
 const list = [
   {
     id: 1,
@@ -113,62 +107,30 @@ export default function Product() {
     prevArrow: <MdKeyboardArrowRight size={24} />,
   };
   return (
-    <main className="flex min-h-screen flex-col gap-6 pt-36 md:pt-[104px]">
-      <h4 className="text-sm text-primary-color px-4">تست / تست</h4>
+    <main className="flex min-h-screen flex-col gap-6 pt-32 md:pt-28">
       <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-col gap-6 bg-white-color lg:p-4">
         <Slider {...settings}>
-          <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
+          <div className="w-full aspect-square bg-primary-color flex items-center justify-center">
             Slider 1
           </div>
-          <div className="w-full h-[360px] bg-secundary-color flex items-center justify-center">
+          <div className="w-full aspect-square bg-secundary-color flex items-center justify-center">
             Slider 2
           </div>
-          <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
+          <div className="w-full aspect-square bg-primary-color flex items-center justify-center">
             Slider 1
-          </div>
-          <div className="w-full h-[360px] bg-secundary-color flex items-center justify-center">
-            Slider 2
-          </div>
-          <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
-            Slider 1
-          </div>
-          <div className="w-full h-[360px] bg-secundary-color flex items-center justify-center">
-            Slider 2
           </div>
         </Slider>
-        <div className="flex flex-col p-4 gap-3">
-          <h2 className="text-2xl h-16 min-h-max text-text-color">
-            سامسونگ گلکسی اس 22 الترا
-          </h2>
-          <h4 className="text-md text-text-grey-color flex flex-row">
-            امتیاز کاربران:
-            <span className="flex flex-row">
-              <MdStar size={16} color={"orange"} />
-              <MdStar size={16} color={"orange"} />
-              <MdStar size={16} color={"orange"} />
-              <MdStar size={16} color={"grey"} />
-              <MdStar size={16} color={"grey"} />
-            </span>
-          </h4>
-          <div className="flex flex-row items-center gap-4 mt-2">
-            <span className="text-sm text-text-color ">رنگ: </span>
-            <div className="flex flex-row items-center p-1 outline outline-2 outline-text-color bg-white-color rounded-full">
-              <div className="p-3 bg-primary-color outline outline-2 outline-white-color rounded-full"></div>
-              <span className="px-2">سبز</span>
-            </div>
-          </div>
-          <span className="text-sm text-text-color ">گارانتی: </span>
-        </div>
-        <div className=" w-full lg:justify-end rounded-md flex flex-row lg:flex-col lg:p-4 gap-3 fixed bottom-0 lg:static">
+        <ProductDetail />
+        <div className=" w-full lg:justify-end flex flex-row lg:flex-col gap-3 fixed bottom-0 lg:static">
           <ShoppingCard />
         </div>
       </div>
-      <div className="flex flex-col p-4 bg-white-color gap-4">
+      <div className="flex flex-col px-4 gap-4">
         <HorizontalProductList products={list} />
       </div>
       <div className="flex flex-col p-4 bg-white-color gap-4">
-        <h3 className="text-md text-text-color">معرفی محصول</h3>
-        <p className="text-md text-grey-color leading-7">
+        <Title text="معرفی محصول" />
+        <p className="text-md text-text-grey-color leading-7">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
           ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
@@ -183,9 +145,8 @@ export default function Product() {
         </p>
       </div>
       <div className="flex flex-col p-4 bg-white-color gap-4">
-        <h3 className="text-md text-text-color">مشخصات</h3>
-
-        <table className="table-fixed w-full text-grey-color">
+        <Title text="مشخصات فنی " />
+        <table className="table-fixed w-full lg:w-2/3 text-text-grey-color">
           <tbody>
             <tr>
               <td className="p-2"> شناخت </td>
@@ -202,9 +163,7 @@ export default function Product() {
           </tbody>
         </table>
       </div>
-      <div className="flex flex-col p-4 bg-white-color gap-4">
-        <h3 className="text-md text-text-color">نظرات کاربران</h3>
-      </div>
+      <Comments />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
-import NavItems from "./navItems";
+import TabItems from "./tabItems";
 import { setOpen } from "@/redux/features/navBarSlice";
 
 const SliderMenu = () => {
@@ -29,7 +29,7 @@ const SliderMenu = () => {
         className={`${sliderPosition} w-2/3 md:w-1/3 flex transition-transform bg-white-color h-screen p-3`}
       >
         <ul className="flex flex-col  gap-3 pt-3 text-sm text-text-color ">
-          <NavItems />
+          <TabItems />
         </ul>
       </div>
     </div>
