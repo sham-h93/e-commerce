@@ -1,6 +1,6 @@
 interface CircleButton {
   children: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const CrircleButton = ({ children, onClick }: CircleButton) => {

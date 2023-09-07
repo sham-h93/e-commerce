@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { MdStar } from "react-icons/md";
 import Button from "@/components/button";
 import { Color } from "@/components/enums/enums";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+
 import Chip from "@/components/chip";
 import Categories from "@/components/categories";
 import digital from "./../../../../public/images/digital.png";
@@ -17,7 +19,8 @@ import samsung from "./../../../../public/images/samsung.png";
 import smartwatch from "./../../../../public/images/smartwatch.png";
 import ProductSuggestionList from "@/components/productSuggestionList";
 import HorizontalProductList from "@/components/horizontalProductList";
-
+import "./../../../../styles/product.css";
+import CrircleButton from "@/components/circleButton";
 const list = [
   {
     id: 1,
@@ -96,26 +99,35 @@ const list = [
 
 export default function Product() {
   const settings = {
-    customPaging: function () {
-      return (
-        <a>
-          <div className="w-[100px] h-[100px] p-10 bg-primary-color flex items-center justify-center"></div>
-        </a>
-      );
-    },
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
     rtl: true,
+    dotsClass: "button__bar",
+    arrows: true,
+    nextArrow: <MdKeyboardArrowLeft size={24} />,
+    prevArrow: <MdKeyboardArrowRight size={24} />,
   };
   return (
     <main className="flex min-h-screen flex-col gap-6 pt-36 md:pt-[104px]">
       <h4 className="text-sm text-primary-color px-4">تست / تست</h4>
-      <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 min-h-screen flex-col gap-6">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-col gap-6">
         <Slider {...settings}>
+          <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
+            Slider 1
+          </div>
+          <div className="w-full h-[360px] bg-secundary-color flex items-center justify-center">
+            Slider 2
+          </div>
+          <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
+            Slider 1
+          </div>
+          <div className="w-full h-[360px] bg-secundary-color flex items-center justify-center">
+            Slider 2
+          </div>
           <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
             Slider 1
           </div>
