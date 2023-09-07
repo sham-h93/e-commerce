@@ -36,7 +36,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="flex bg-white-color col-span-3 lg:col-span-3 items-center px-2">
+      <div className="hidden lg:flex bg-white-color col-span-3 lg:col-span-3 items-center px-2">
         <Nav />
       </div>
     </div>

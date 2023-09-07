@@ -67,7 +67,7 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
       <div className="px-6">
         <Title text={"پیشنهادات شگفت انگیز"} />
       </div>
-      <div className="w-full flex bg-primary-color z-30 flex-row px-4 justify-between items-center rounded-full absolute top-1/2 bottom-1/2">
+      <div className="w-full flex bg-primary-color flex-row px-4 justify-between items-center rounded-full absolute top-1/2 bottom-1/2">
         <div className={`flex ${isListFirstItemVisible && `invisible`} `}>
           <CrircleButton onClick={() => handleHorizontalScroll()}>
             <MdKeyboardArrowRight size={40} color={"white"} />

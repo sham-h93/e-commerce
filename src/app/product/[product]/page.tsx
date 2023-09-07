@@ -21,6 +21,7 @@ import ProductSuggestionList from "@/components/productSuggestionList";
 import HorizontalProductList from "@/components/horizontalProductList";
 import "./../../../../styles/product.css";
 import CrircleButton from "@/components/circleButton";
+import ShoppingCard from "@/components/shoppingCard";
 const list = [
   {
     id: 1,
@@ -114,7 +115,7 @@ export default function Product() {
   return (
     <main className="flex min-h-screen flex-col gap-6 pt-36 md:pt-[104px]">
       <h4 className="text-sm text-primary-color px-4">تست / تست</h4>
-      <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-col gap-6">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-col gap-6 bg-white-color lg:p-4">
         <Slider {...settings}>
           <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
             Slider 1
@@ -135,11 +136,11 @@ export default function Product() {
             Slider 2
           </div>
         </Slider>
-        <div className="flex flex-col p-4 gap-3 bg-white-color">
-          <h2 className="text-2xl font-bold text-grey-color">
+        <div className="flex flex-col p-4 gap-3">
+          <h2 className="text-2xl h-16 min-h-max text-text-color">
             سامسونگ گلکسی اس 22 الترا
           </h2>
-          <h4 className="text-xs text-grey-color flex flex-row">
+          <h4 className="text-md text-text-grey-color flex flex-row">
             امتیاز کاربران:
             <span className="flex flex-row">
               <MdStar size={16} color={"orange"} />
@@ -149,29 +150,17 @@ export default function Product() {
               <MdStar size={16} color={"grey"} />
             </span>
           </h4>
-          <div className="flex flex-row items-center gap-3 mt-2">
+          <div className="flex flex-row items-center gap-4 mt-2">
             <span className="text-sm text-text-color ">رنگ: </span>
-            <div className="p-4 bg-primary-color outline outline-2 outline-grey-color rounded-full"></div>
-            <div className="p-4 bg-white-color outline outline-2 outline-secundary-color rounded-full"></div>
-            <div className="p-4 bg-white-color outline outline-2 outline-warning-color rounded-full"></div>
-          </div>
-        </div>
-        <div className="w-full bg-white-color rounded-md flex flex-row p-4 gap-3 fixed bottom-0 lg:static">
-          <Button
-            width="w-full"
-            height="h-full"
-            color={Color.Primary}
-            text="افزودن به سبد خرید"
-            onClick={() => {}}
-          />
-          <div className="h-full flex flex-col items-end justify-center grow basis-1/2">
-            <h3 className="flex flex-row">
-              136.000 <span>تومان</span>
-            </h3>
-            <div className="flex flex-row gap-1 items-center text-xs text-grey-color line-through">
-              100.000 <span>تومان</span>
+            <div className="flex flex-row items-center p-1 outline outline-2 outline-text-color bg-white-color rounded-full">
+              <div className="p-3 bg-primary-color outline outline-2 outline-white-color rounded-full"></div>
+              <span className="px-2">سبز</span>
             </div>
           </div>
+          <span className="text-sm text-text-color ">گارانتی: </span>
+        </div>
+        <div className=" w-full lg:justify-end rounded-md flex flex-row lg:flex-col lg:p-4 gap-3 fixed bottom-0 lg:static">
+          <ShoppingCard />
         </div>
       </div>
       <div className="flex flex-col p-4 bg-white-color gap-4">
