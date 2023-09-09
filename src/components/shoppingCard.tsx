@@ -1,3 +1,4 @@
+"use client";
 import Button from "./button";
 import Chip from "./chip";
 import { Color } from "./enums/enums";
