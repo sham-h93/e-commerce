@@ -6,6 +6,7 @@ import charger from "./../../../public/images/charger.png";
 import headphone from "./../../../public/images/headphone.png";
 import iphone from "./../../../public/images/iphone.png";
 import CartTotal from "@/components/cartTotal";
+import CartDeliverySection from "@/components/cartDeliverySection";
 
 const list = [
   {
@@ -41,7 +42,10 @@ export default function Cart() {
       <Title text="سبد خرید" />
       <div className="relative flex flex-row gap-6 lg:p-4  rounded-2xl outline outline-1 outline-grey-color bg-white-color ">
         <CartItems products={list} />
-        <CartTotal />
+        <div className="flex flex-col gap-4">
+          <CartTotal />
+          <CartDeliverySection />
+        </div>
       </div>
     </main>
   );

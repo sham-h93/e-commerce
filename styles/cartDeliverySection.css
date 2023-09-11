@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #a3c93a;
+}
+
+input:checked + label {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+input:checked + label div {
+  display: block;
+}
