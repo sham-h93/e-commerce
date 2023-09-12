@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" className={`${yekan.className}`}>
       <Provider store={store}>
-        <body>
+        <body className="min-h-screen">
           <Header />
           <SliderMenu />
           {children}
@@ -41,4 +41,3 @@ export default function RootLayout({
     </html>
   );
 }
-``;
