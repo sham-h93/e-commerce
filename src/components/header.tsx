@@ -26,12 +26,12 @@ const Header = () => {
         <MdMenu size={24} color={"white"} />
       </div>
       <div className=" flex flex-row gap-2 justify-center col-span-2 md:col-span-1  items-center justify-self-end">
-        <div className="flex flex-row p-2 divide-x-2">
+        <Link href={`/cart`} className="flex flex-row p-2 divide-x-2">
           <MdShoppingCart size={24} color={"white"} />
-        </div>
+        </Link>
         <div className="flex flex-row p-2 rounded-md gap-1">
           <MdLogin className="" size={24} color={"white"} />
-          <Link className=" text-white-color" href={"/"}>
+          <Link className=" text-white-color" href={`/user/profile`}>
             ورود/ثبت نام
           </Link>
         </div>

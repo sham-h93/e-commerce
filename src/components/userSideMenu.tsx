@@ -15,18 +15,18 @@ const UserSideMenu = () => {
   };
 
   return (
-    <div className="w-1/5 bg-white-color outline outline-1 outline-grey-color p-4 flex flex-col rounded-2xl">
-      <ul className="flex flex-col gap-2">
+    <div className=" md:w-1/3 lg:w-1/5 p-4 flex flex-col">
+      <ul className="flex flex-row w-full md:w-auto md:flex-col gap-2">
         <li
           data-key={"profile"}
           onClick={(e) => handleSelectefTab(e)}
-          className="flex flex-row  h-10 gap-2 items-center hover:bg-background-grey-color rounded-lg select-none cursor-pointer"
+          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row gap-2 items-center hover:bg-background-grey-color rounded-lg select-none cursor-pointer"
         >
           {
             <div
               className={`${
                 selectedTab === "profile" ? `block` : `invisible`
-              } bg-primary-color p-[2px] h-full`}
+              } bg-primary-color p-[1px] md:p-[2px] h-full w-full md:w-auto`}
             ></div>
           }
           پروفایل
@@ -34,13 +34,13 @@ const UserSideMenu = () => {
         <li
           data-key={"orders"}
           onClick={(e) => handleSelectefTab(e)}
-          className="flex flex-row  h-10 gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
+          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row  gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
         >
           {
             <div
               className={`${
                 selectedTab === "orders" ? `block` : `invisible`
-              } bg-primary-color p-[2px] h-full`}
+              } bg-primary-color p-[1px] md:p-[2px] h-full w-full md:w-auto`}
             ></div>
           }
           سفارشات
@@ -48,20 +48,20 @@ const UserSideMenu = () => {
         <li
           data-key={"favorites"}
           onClick={(e) => handleSelectefTab(e)}
-          className="flex flex-row  h-10 gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
+          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row  gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
         >
           {
             <div
               className={`${
                 selectedTab === "favorites" ? `block` : `invisible`
-              } bg-primary-color p-[2px] h-full`}
+              } bg-primary-color p-[1px] md:p-[2px] h-full w-full md:w-auto`}
             ></div>
           }
           علاقه مندی ها
         </li>
         <li
           onClick={() => {}}
-          className="flex flex-row  h-10 gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
+          className="h-10 flex flex-1 md:flex-auto flex-col justify-end md:justify-normal text-center md:flex-row gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
         >
           خروج
         </li>
