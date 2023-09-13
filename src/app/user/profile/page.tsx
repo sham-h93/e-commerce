@@ -3,7 +3,7 @@ import { MdEdit } from "react-icons/md";
 
 export default function Profile() {
   return (
-    <main className="p-4 flex flex-col gap-4 bg-white-color w-full outline outline-1 outline-grey-color rounded-2xl">
+    <main className="p-4 flex flex-col gap-4 bg-white-color w-full outline outline-1 outline-grey-color">
       <div className="flex flex-row gap-2 items-center">
         <Title text="اطلاعات کاربر" />
         <div className="flex flex-row p-2 items-center text-sm text-primary-color hover:cursor-pointer select-none">
@@ -11,7 +11,7 @@ export default function Profile() {
           <MdEdit size={24} />
         </div>
       </div>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-col gap-4 lg:flex-row">
         <div className="flex flex-col gap-2 flex-1">
           <a className="text-xs text-text-grey-color">نام و نام خانوادگی:</a>
           <a className="text-lg text-text-color">حسین سعدون اصل</a>
@@ -33,7 +33,7 @@ export default function Profile() {
           <MdEdit size={24} />
         </div>
       </div>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-col gap-4 lg:flex-row">
         <div className="flex flex-col gap-2 flex-1">
           <a className="text-xs text-text-grey-color">استان:</a>
           <a className="text-lg text-text-color">خوزستان</a>

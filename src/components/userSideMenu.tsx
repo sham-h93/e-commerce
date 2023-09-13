@@ -15,7 +15,7 @@ const UserSideMenu = () => {
   };
 
   return (
-    <div className=" md:w-1/3 lg:w-1/5 p-4 flex flex-col">
+    <div className=" md:w-1/3 lg:w-1/5 flex flex-col outline outline-1 outline-grey-color">
       <ul className="flex flex-row w-full md:w-auto md:flex-col gap-2">
         <li
           data-key={"profile"}
