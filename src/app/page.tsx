@@ -122,6 +122,8 @@ export default function Home() {
         <Categories categories={categories} />
         <div className=" h-32 bg-warning-color rounded-2xl"></div>
         <ProductSuggestionList listTitle="پر بازدیدترین ها" products={list} />
+        <div className=" h-32 bg-primary-color rounded-2xl"></div>
+        <ProductSuggestionList listTitle="پر بازدیدترین ها" products={list} />
       </div>
     </main>
   );
