@@ -1,7 +1,7 @@
 "use client";
-import "./globals.css";
+import "./../globals.css";
 import type { Metadata } from "next";
-import Header from "../components/header";
+import Header from "../../components/header";
 import localFont from "next/font/local";
 import SliderMenu from "@/components/slide";
 import { Provider } from "react-redux";
@@ -11,7 +11,7 @@ import Footer from "@/components/footer";
 const yekan = localFont({
   src: [
     {
-      path: "./../../public/fonts/iranyekanwebregular.woff2",
+      path: "./../../../public/fonts/iranyekanwebregular.woff2",
       style: "regular",
     },
   ],

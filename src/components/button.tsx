@@ -37,7 +37,7 @@ const Button = ({
 
   return (
     <button
-      className={`${bgColor} ${width} ${height} text-base px-4 py-2 h-10 flex flex-row gap-3 items-center justify-center rounded-lg`}
+      className={`${bgColor} ${width} ${height} text-xs px-4 py-2 h-12 flex flex-row gap-3 items-center justify-center rounded-xl`}
       onClick={onClick}
       disabled={disabled}
     >

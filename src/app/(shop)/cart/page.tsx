@@ -2,11 +2,11 @@
 import CartItems from "@/components/cartItems";
 import Title from "@/components/title";
 
-import charger from "./../../../public/images/charger.png";
-import headphone from "./../../../public/images/headphone.png";
-import iphone from "./../../../public/images/iphone.png";
-import CartTotal from "@/components/cartTotal";
+import charger from "./../../../../public/images/charger.png";
+import headphone from "./../../../../public/images/headphone.png";
+import iphone from "./../../../../public/images/iphone.png";
 import CartDeliverySection from "@/components/cartDeliverySection";
+import CartTotal from "@/components/cartTotal";
 
 const list = [
   {

@@ -3,15 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import charger from "./../../../../public/images/charger.png";
-import headphone from "./../../../../public/images/headphone.png";
-import iphone from "./../../../../public/images/iphone.png";
-import laptop from "./../../../../public/images/laptop.png";
-import nokia from "./../../../../public/images/nokia.png";
-import samsung from "./../../../../public/images/samsung.png";
-import smartwatch from "./../../../../public/images/smartwatch.png";
+import charger from "./../../../../../public/images/charger.png";
+import headphone from "./../../../../../public/images/headphone.png";
+import iphone from "./../../../../../public/images/iphone.png";
+import laptop from "./../../../../../public/images/laptop.png";
+import nokia from "./../../../../../public/images/nokia.png";
+import samsung from "./../../../../../public/images/samsung.png";
+import smartwatch from "./../../../../../public/images/smartwatch.png";
 import HorizontalProductList from "@/components/horizontalProductList";
-import "./../../../../styles/product.css";
+import "./../../../../../styles/product.css";
 import ShoppingCard from "@/components/shoppingCard";
 import ProductDetail from "@/components/productDetail";
 import Title from "@/components/title";
@@ -107,7 +107,7 @@ export default function Product() {
     prevArrow: <MdKeyboardArrowRight size={24} />,
   };
   return (
-    <main className="flex min-h-screen flex-col gap-6 pt-32 md:pt-28">
+    <main className="flex flex-col mx-4 lg:mx-0 xl:max-w-7xl xl:mx-auto xl:self-center gap-6 pt-32 md:pt-28">
       <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-col gap-6 bg-white-color lg:p-4">
         <Slider {...settings}>
           <div className="w-full aspect-square bg-primary-color flex items-center justify-center">
@@ -121,7 +121,7 @@ export default function Product() {
           </div>
         </Slider>
         <ProductDetail />
-        <div className=" w-full lg:justify-end flex flex-row lg:flex-col gap-3 fixed bottom-0 lg:static">
+        <div className=" w-full lg:justify-end flex flex-row lg:flex-col gap-3 left-0 right-0 fixed bottom-0 lg:static">
           <ShoppingCard />
         </div>
       </div>

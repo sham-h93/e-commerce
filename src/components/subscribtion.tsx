@@ -6,7 +6,7 @@ const Subscribtion = () => {
   return (
     <div className="gap-2 flex flex-row items-center">
       <form
-        className="w-full bg-background-grey-color p-2 rounded-lg "
+        className="w-full bg-background-grey-color p-2 rounded-xl "
         action=""
       >
         <input

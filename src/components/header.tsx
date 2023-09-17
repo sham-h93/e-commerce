@@ -4,8 +4,8 @@ import Logo from "./logo";
 import Nav from "./nav";
 import SearchBar from "./searchBar";
 import Link from "next/link";
-import { useDispatch } from "react-redux";
 import { setOpen } from "@/redux/features/navBarSlice";
+import { useDispatch } from "react-redux";
 
 const Header = () => {
   const dispatch = useDispatch();

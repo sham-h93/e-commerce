@@ -1,19 +1,14 @@
 import HorizontalProductList from "@/components/horizontalProductList";
 import SliderBanner from "@/components/slider";
-import BannerLists from "@/components/bannerList";
-import { ProductItem } from "@/components/types/productItemType";
 import Categories from "@/components/categories";
-import digital from "./../../public/images/digital.png";
-import charger from "./../../public/images/charger.png";
-import headphone from "./../../public/images/headphone.png";
-import iphone from "./../../public/images/iphone.png";
-import laptop from "./../../public/images/laptop.png";
-import nokia from "./../../public/images/nokia.png";
-import samsung from "./../../public/images/samsung.png";
-import smartwatch from "./../../public/images/smartwatch.png";
-
-import Banner from "@/components/banner";
-import Image from "next/image";
+import digital from "./../../../public/images/digital.png";
+import charger from "./../../../public/images/charger.png";
+import headphone from "./../../../public/images/headphone.png";
+import iphone from "./../../../public/images/iphone.png";
+import laptop from "./../../../public/images/laptop.png";
+import nokia from "./../../../public/images/nokia.png";
+import samsung from "./../../../public/images/samsung.png";
+import smartwatch from "./../../../public/images/smartwatch.png";
 import ProductSuggestionList from "@/components/productSuggestionList";
 
 const list = [
