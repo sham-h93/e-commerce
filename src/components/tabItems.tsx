@@ -1,23 +1,22 @@
 import Link from "next/link";
+import { use, useState } from "react";
+import NavMenuItem from "./navMenuItem";
 
 const TabItems = () => {
+  const [show, setShow] = useState(false);
+  const showSubMenu = () => {
+    setShow(true);
+  };
+  const hideubMenu = () => {
+    setShow(false);
+  };
   return (
     <>
-      <li className="pb-2 hover:text-primary-color hover:border-b-2 transition-transform">
-        <Link href={""}>دسته بندی 1</Link>
-      </li>
-      <li className="pb-2 hover:text-primary-color hover:border-b-2 transition-transform">
-        <Link href={""}>دسته بندی 2</Link>
-      </li>
-      <li className="pb-2 hover:text-primary-color hover:border-b-2 transition-transform">
-        <Link href={""}>دسته بندی 3</Link>
-      </li>
-      <li className="pb-2 hover:text-primary-color hover:border-b-2 transition-transform">
-        <Link href={""}>دسته بندی 4</Link>
-      </li>
-      <li className="pb-2 hover:text-primary-color hover:border-b-2 transition-transform">
-        <Link href={""}>دسته بندی 5</Link>
-      </li>
+      <NavMenuItem text="موبایل" />
+      <NavMenuItem text="کامپیوت و لپ تاپ" />
+      <NavMenuItem text="جانبی" />
+      <NavMenuItem text="صوتی و تصویری" />
+      <NavMenuItem text="دوربین" />
     </>
   );
 };
