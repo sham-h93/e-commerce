@@ -15,12 +15,12 @@ const UserSideMenu = () => {
   };
 
   return (
-    <div className=" md:w-1/3 lg:w-1/5 flex flex-col outline outline-1 outline-grey-color">
+    <div className=" md:w-1/3 lg:w-1/5 flex flex-col outline outline-1 outline-gray-300">
       <ul className="flex flex-row w-full md:w-auto md:flex-col gap-2">
         <li
           data-key={"profile"}
           onClick={(e) => handleSelectefTab(e)}
-          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row gap-2 items-center hover:bg-background-grey-color rounded-lg select-none cursor-pointer"
+          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row gap-2 items-center hover:bg-gray-50 rounded-lg select-none cursor-pointer"
         >
           {
             <div
@@ -34,7 +34,7 @@ const UserSideMenu = () => {
         <li
           data-key={"orders"}
           onClick={(e) => handleSelectefTab(e)}
-          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row  gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
+          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row  gap-2 items-center hover:bg-gray-50 rounded-lg  cursor-pointer"
         >
           {
             <div
@@ -48,7 +48,7 @@ const UserSideMenu = () => {
         <li
           data-key={"favorites"}
           onClick={(e) => handleSelectefTab(e)}
-          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row  gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
+          className="h-10 flex flex-1 md:flex-auto flex-col md:flex-row  gap-2 items-center hover:bg-gray-50 rounded-lg  cursor-pointer"
         >
           {
             <div
@@ -61,7 +61,7 @@ const UserSideMenu = () => {
         </li>
         <li
           onClick={() => {}}
-          className="h-10 flex flex-1 md:flex-auto flex-col justify-end md:justify-normal text-center md:flex-row gap-2 items-center hover:bg-background-grey-color rounded-lg  cursor-pointer"
+          className="h-10 flex flex-1 md:flex-auto flex-col justify-end md:justify-normal text-center md:flex-row gap-2 items-center hover:bg-gray-50 rounded-lg  cursor-pointer"
         >
           خروج
         </li>

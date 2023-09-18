@@ -13,19 +13,19 @@ const Button = ({
   let bgColor;
   switch (color) {
     case Color.Primary: {
-      bgColor = "bg-primary-color text-white-color";
+      bgColor = "bg-primary-color text-white";
       break;
     }
     case Color.Success: {
-      bgColor = "bg-success-color text-white-color";
+      bgColor = "bg-success-color text-white";
       break;
     }
     case Color.Error: {
-      bgColor = "bg-error-color text-white-color";
+      bgColor = "bg-error-color text-white";
       break;
     }
     case Color.Dark: {
-      bgColor = "bg-dark-background-color text-white-color";
+      bgColor = "bg-gray-800 text-white";
       break;
     }
 

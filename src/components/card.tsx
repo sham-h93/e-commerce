@@ -11,7 +11,7 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`flex flex-col gap-2 p-4 ${color} ${outline} outline-1 outline-grey-color rounded-2xl`}
+      className={`flex flex-col gap-2 p-4 ${color} ${outline} outline-1 outline-gray-300 rounded-2xl`}
     >
       {children}
     </div>

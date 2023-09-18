@@ -4,7 +4,7 @@ import "./../../styles/cartDeliverySection.css";
 
 const CartDeliverySection = () => {
   return (
-    <div className="w-full z-10 rounded-t-2xl lg:rounded-2xl outline outline-1 outline-grey-color flex flex-row lg:flex-col p-4 gap-3">
+    <div className="w-full z-10 rounded-t-2xl lg:rounded-2xl outline outline-1 outline-gray-300 flex flex-row lg:flex-col p-4 gap-3">
       <div className="flex flex-row justify-between gap-2">
         <p className="text-sm"> آدرس</p>
         <Link href={"/"} className="text-xs font-bold  text-primary-color">
@@ -27,7 +27,7 @@ const CartDeliverySection = () => {
       />
       <label
         htmlFor="post"
-        className="inline-flex items-center justify-between w-full p-2 text-text-grey-color bg-white border-2 border-grey-color rounded-lg cursor-pointer checked:bg-primary-color checked:text-primary-color hover:bg-background-lght-grey-color"
+        className="inline-flex items-center justify-between w-full p-2 text-gray-500 bg-white border-2 border-gray-300 rounded-lg cursor-pointer checked:bg-primary-color checked:text-primary-color hover:bg-gray-100"
       >
         <span className="w-full text-lg"> پست</span>
         <div className="hidden">
@@ -45,7 +45,7 @@ const CartDeliverySection = () => {
       />
       <label
         htmlFor="special-post"
-        className="inline-flex items-center justify-between w-full p-2 text-text-grey-color bg-white border-2 border-grey-color rounded-lg cursor-pointer checked:bg-primary-color checked:text-primary-color hover:bg-background-lght-grey-color"
+        className="inline-flex items-center justify-between w-full p-2 text-gray-500 bg-white border-2 border-gray-300 rounded-lg cursor-pointer checked:bg-primary-color checked:text-primary-color hover:bg-gray-100"
       >
         <span className="w-full text-lg"> پست سفارشی</span>
         <div className="hidden">
@@ -63,7 +63,7 @@ const CartDeliverySection = () => {
       />
       <label
         htmlFor="pishtaz"
-        className="inline-flex items-center justify-between w-full p-2 text-text-grey-color bg-white border-2 border-grey-color rounded-lg cursor-pointer checked:bg-primary-color checked:text-primary-color hover:bg-background-lght-grey-color"
+        className="inline-flex items-center justify-between w-full p-2 text-gray-500 bg-white border-2 border-gray-300 rounded-lg cursor-pointer checked:bg-primary-color checked:text-primary-color hover:bg-gray-100"
       >
         <span className="w-full text-lg"> پست پیشتاز</span>
         <div className="hidden">
@@ -81,7 +81,7 @@ const CartDeliverySection = () => {
       />
       <label
         htmlFor="tipax"
-        className="inline-flex items-center justify-between w-full p-2 text-text-grey-color bg-white border-2 border-grey-color rounded-lg cursor-pointer checked:bg-primary-color checked:text-primary-color hover:bg-background-lght-grey-color"
+        className="inline-flex items-center justify-between w-full p-2 text-gray-500 bg-white border-2 border-gray-300 rounded-lg cursor-pointer checked:bg-primary-color checked:text-primary-color hover:bg-gray-100"
       >
         <span className="w-full text-lg"> تیپاکس</span>
         <div className="hidden">

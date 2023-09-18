@@ -21,7 +21,7 @@ const Categories = ({ categories }: { categories: CategoryItem[] }) => {
   }
 
   return (
-    <Card color={"bg-white-color"} outline={"outline"}>
+    <Card color={"bg-white"} outline={"outline"}>
       <Title text="دسته بندی ها" />
       <ul className="w-full flex flex-row flex-wrap gap-14 items-center justify-center">
         {handleCategories()}

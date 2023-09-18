@@ -1,15 +1,6 @@
-import Link from "next/link";
-import { use, useState } from "react";
 import NavMenuItem from "./navMenuItem";
 
 const TabItems = () => {
-  const [show, setShow] = useState(false);
-  const showSubMenu = () => {
-    setShow(true);
-  };
-  const hideubMenu = () => {
-    setShow(false);
-  };
   return (
     <>
       <NavMenuItem text="موبایل" />

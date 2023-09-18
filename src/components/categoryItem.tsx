@@ -7,7 +7,7 @@ const CategoryItem = ({ image, text }: CategoryItem) => {
       <div className="w-24 h-24 bg-primary-color bg-opacity-25 rounded-full flex items-center justify-center">
         <Image src={image} width={96} height={96} alt="" />
       </div>
-      <h3 className="text-text-color">{text}</h3>
+      <h3 className="text-gray-500">{text}</h3>
     </div>
   );
 };

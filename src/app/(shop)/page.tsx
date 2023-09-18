@@ -115,9 +115,9 @@ export default function Home() {
       <div className="px-4 xl:max-w-7xl xl:mx-0 xl:self-center flex flex-col gap-6">
         <HorizontalProductList products={list} />
         <Categories categories={categories} />
-        <div className=" h-32 bg-warning-color rounded-2xl"></div>
+        <div className=" h-32 bg-gray-200 rounded-2xl"></div>
         <ProductSuggestionList listTitle="پر بازدیدترین ها" products={list} />
-        <div className=" h-32 bg-primary-color rounded-2xl"></div>
+        <div className=" h-32 bg-gray-200 rounded-2xl"></div>
         <ProductSuggestionList listTitle="پر بازدیدترین ها" products={list} />
       </div>
     </main>

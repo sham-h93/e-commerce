@@ -5,13 +5,10 @@ import { Color } from "./enums/enums";
 const Subscribtion = () => {
   return (
     <div className="gap-2 flex flex-row items-center">
-      <form
-        className="w-full bg-background-grey-color p-2 rounded-xl "
-        action=""
-      >
+      <form className="w-full bg-white p-2 rounded-xl " action="">
         <input
           type="text"
-          className="w-full bg-transparent-color focus:outline-none"
+          className="w-full bg-transparent focus:outline-none"
           placeholder="ایمیل خود را وارد کنید"
         />
       </form>

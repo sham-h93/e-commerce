@@ -10,26 +10,27 @@ const config: Config = {
     container: {
       center: true,
     },
-    colors: {
-      "transparent-color": "transparent",
-      "white-color": "#fff",
-      "grey-color": "#e0e0e6",
-      "background-color": "#fafafa",
-      "dark-background-color": "#555555",
-      "background-grey-color": "#F1F2F4",
-      "background-lght-grey-color": "#F7F7F7",
-      "primary-color": "#3d5a80",
-      "secundary-color": "#673ab7",
-      "text-color": "#555555",
-      "text-grey-color": "#848484",
-      "success-color": "#4caf50",
-      "warning-color": "#ffc107",
-      "error-color": "#f44336",
-      "icon-color": "#3f4064",
-    },
+
     extend: {
       dropShadow: {
         front: "0 0px 8px rgba(0, 0, 0, 0.25)",
+      },
+      colors: {
+        "transparent-color": "transparent",
+        "white-color": "#fff",
+        "grey-color": "#e0e0e6",
+        "background-color": "#fafafa",
+        "dark-background-color": "#555555",
+        "background-grey-color": "#F1F2F4",
+        "background-lght-grey-color": "#F7F7F7",
+        "primary-color": "#3d5a80",
+        "secundary-color": "#673ab7",
+        "text-color": "#555555",
+        "text-grey-color": "#848484",
+        "success-color": "#4caf50",
+        "warning-color": "#ffc107",
+        "error-color": "#f44336",
+        "icon-color": "#3f4064",
       },
 
       fontFamily: {

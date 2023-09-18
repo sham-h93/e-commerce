@@ -11,14 +11,14 @@ const CartItem = ({ product }: { product: ProductItem }) => {
   const { image, name, previosPrice, price, discount } = product;
 
   return (
-    <div className="h-48 min-w-full flex flex-row gap-2 relative bg-white-color p-3 hover:drop-shadow-front hover:z-10 transition-all">
+    <div className="h-48 min-w-full flex flex-row gap-2 relative bg-white p-3 hover:drop-shadow-front hover:z-10 transition-all">
       <div className="h-full aspect-square">
         <Link href={`/product/${product.id}`}>
           <Image src={image} alt="" layout="responsive" />
         </Link>
       </div>
       <div className=" flex flex-row justify-between grow">
-        <h2 className="text-base h-12 text-text-color line-clamp-2 w-1/2">
+        <h2 className="text-base h-12 text-gray-500 line-clamp-2 w-1/2">
           {name}
         </h2>
         <div className="flex flex-col items-end">

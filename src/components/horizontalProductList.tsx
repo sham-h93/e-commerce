@@ -63,7 +63,7 @@ const HorizontalProductList = ({ products }: { products: ProductItem[] }) => {
   }
 
   return (
-    <div className="flex flex-col gap-2 relative bg-white-color outline outline-1 outline-grey-color rounded-2xl py-6">
+    <div className="flex flex-col gap-2 relative bg-white outline outline-1 outline-gray-200 rounded-2xl py-6">
       <div className="px-6">
         <Title text={"پیشنهادات شگفت انگیز"} />
       </div>

@@ -6,7 +6,7 @@ import { MdCheck } from "react-icons/md";
 
 const ShoppingCard = () => {
   return (
-    <div className="w-full lg:w-80 h-full z-10 lg:self-end bg-background-grey-color rounded-t-2xl lg:rounded-2xl flex flex-row lg:flex-col p-4 gap-3">
+    <div className="w-full lg:w-80 h-full z-10 lg:self-end bg-gray-100 rounded-t-2xl lg:rounded-2xl flex flex-row lg:flex-col p-4 gap-3">
       <div className="w-1/3 lg:w-full flex flex-col gap-3">
         <div className="flex flex-row items-center">
           <div className="p-1 bg-primary-color rounded-lg">
@@ -38,10 +38,10 @@ const ShoppingCard = () => {
           <Chip text={"30% تخفیف"} />
           <span className="text-primary-color">ارسال رایگان</span>
         </div>
-        <h3 className="flex flex-row text-text-grey-color gap-1 items-center text-sm text- line-through">
+        <h3 className="flex flex-row text-gray-400 gap-1 items-center text-sm text- line-through">
           100.000 <span className="text-xs">تومان</span>
         </h3>
-        <h3 className="flex flex-row text-text-color gap-1 text-2xl items-center">
+        <h3 className="flex flex-row text-gray-500 gap-1 text-2xl items-center">
           136.000 <span className="text-base">تومان</span>
         </h3>
         <Button

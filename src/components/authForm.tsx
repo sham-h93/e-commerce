@@ -1,5 +1,4 @@
 "use client";
-import { type } from "os";
 import { useForm } from "react-hook-form";
 
 type Inputs = {

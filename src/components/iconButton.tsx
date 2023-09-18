@@ -7,7 +7,7 @@ const IconButton = ({
 }) => {
   return (
     <div
-      className="p-1 rounded-lg bg-background-grey-color hover:cursor-pointer"
+      className="p-1 rounded-lg bg-gray-100 hover:cursor-pointer"
       onClick={onClick}
     >
       {children}

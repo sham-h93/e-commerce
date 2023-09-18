@@ -13,8 +13,8 @@ const SliderBanner = () => {
     autoplay: true,
     rtl: true,
     appendDots: (dots: any) => (
-      <div className="bg-secundary-color p-0 w-full relative">
-        <ul className="bg-transparent-color selection:bg-white-color absolute bottom-8 left-0">
+      <div className="bg-lime-300 p-0 w-full relative">
+        <ul className="bg-transparent-color selection:bg-white absolute bottom-8 left-0">
           {dots}
         </ul>
       </div>
@@ -26,7 +26,7 @@ const SliderBanner = () => {
         <div className="w-full h-[360px] bg-primary-color flex items-center justify-center">
           Slider 1
         </div>
-        <div className="w-full h-[360px] bg-secundary-color flex items-center justify-center">
+        <div className="w-full h-[360px] bg-green-200 flex items-center justify-center">
           Slider 3
         </div>
       </Slider>

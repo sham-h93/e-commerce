@@ -6,8 +6,8 @@ interface CircleButton {
 const CrircleButton = ({ children, onClick }: CircleButton) => {
   return (
     <div
-      className="bg-dark-background-color opacity-50 flex justify-center items-center w-12 h-12 rounded-xl z-20 hover:cursor-pointer"
-      onClick={() => onClick()}
+      className="bg-gray-800 opacity-50 flex justify-center items-center w-12 h-12 rounded-xl z-20 hover:cursor-pointer"
+      onClick={onClick}
     >
       {children}
     </div>

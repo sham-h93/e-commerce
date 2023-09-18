@@ -13,10 +13,10 @@ const Footer = () => {
       <div className=" md:grid md:grid-cols-2 lg:grid-cols-3 mt-4 bg-primary-color gap-4 p-4">
         <div className="w-auto flex flex-col gap-4 lg:col-span-2">
           <Logo />
-          <p className="text-white-color">تلفن پشتیبانی ۲۱۲۱۲۱۲۱۲۱ - ۰۲۱</p>
+          <p className="text-white">تلفن پشتیبانی ۲۱۲۱۲۱۲۱۲۱ - ۰۲۱</p>
         </div>
         <div className=" flex flex-col gap-4 lg:items-start">
-          <p className="text-white-color text-sm">همراه ما باشید</p>
+          <p className="text-white text-sm">همراه ما باشید</p>
           <div className="flex flex-row gap-3">
             <Link href={"/"}>
               <SiYoutube color={"white"} size={24} />
@@ -30,35 +30,35 @@ const Footer = () => {
             <Link href={"/"}>
               <SiAparat color={"white"} size={24} />
             </Link>
-            <p className="text-xs text-white-color">دنبال کنید!</p>
+            <p className="text-xs text-white">دنبال کنید!</p>
           </div>
           <Subscribtion />
         </div>
         <div className="w-auto grid md:grid-cols-2 lg:grid-cols-3 lg:col-span-2 gap-4 py-4 md:py-0">
           <div className="flex flex-col gap-3">
-            <h4 className="text-lg text-white-color">خدمات مشتریان</h4>
-            <Link className="text-sm text-white-color" href={"/"}>
+            <h4 className="text-lg text-white">خدمات مشتریان</h4>
+            <Link className="text-sm text-white" href={"/"}>
               پرسش های متداول
             </Link>
-            <Link className="text-sm text-white-color" href={"/"}>
+            <Link className="text-sm text-white" href={"/"}>
               نحوه بازگشت کالا
             </Link>
-            <Link className="text-sm text-white-color" href={"/"}>
+            <Link className="text-sm text-white" href={"/"}>
               شرایط استفاده
             </Link>
-            <Link className="text-sm text-white-color" href={"/"}>
+            <Link className="text-sm text-white" href={"/"}>
               حریم خصوصی
             </Link>
           </div>
           <div className="flex flex-col gap-4">
-            <h4 className="text-lg text-white-color">راهنمای خرید</h4>
-            <Link className="text-sm text-white-color" href={"/"}>
+            <h4 className="text-lg text-white">راهنمای خرید</h4>
+            <Link className="text-sm text-white" href={"/"}>
               ثبت سفارش
             </Link>
-            <Link className="text-sm text-white-color" href={"/"}>
+            <Link className="text-sm text-white" href={"/"}>
               ارسال مسفارش
             </Link>
-            <Link className="text-sm text-white-color" href={"/"}>
+            <Link className="text-sm text-white" href={"/"}>
               پرداخت
             </Link>
           </div>
@@ -76,27 +76,27 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full md:w-auto flex flex-row gap-4">
-          <Link className=" text-sm text-white-color" href={"/"}>
+          <Link className=" text-sm text-white" href={"/"}>
             <Image
-              className="h-full md:h-24 bg-background-color p-3 rounded-xl"
+              className="h-full md:h-24 bg-white p-3 rounded-xl"
               src={Enamad}
               width={84}
               height={84}
               alt={"enamad"}
             />
           </Link>
-          <Link className="text-sm text-white-color" href={"/"}>
+          <Link className="text-sm text-white" href={"/"}>
             <Image
-              className="h-full md:h-24 bg-background-color p-3 rounded-xl"
+              className="h-full md:h-24 bg-white p-3 rounded-xl"
               src={Kasbokarmajazi}
               width={84}
               height={84}
               alt={"kasbokarmajazi"}
             />
           </Link>
-          <Link className="text-sm text-white-color" href={"/"}>
+          <Link className="text-sm text-white" href={"/"}>
             <Image
-              className="h-full md:h-24 bg-background-color p-3 rounded-xl"
+              className="h-full md:h-24 bg-white p-3 rounded-xl"
               src={Samandehi}
               width={84}
               height={84}
@@ -121,8 +121,8 @@ const Footer = () => {
           </p>
         </div> */}
       </div>
-      <div className="bg-dark-background-color flex flex-col col-span-2 p-6 items-center justify-center">
-        <p className="text-sm text-white-color">
+      <div className="bg-gray-700 flex flex-col col-span-2 p-6 items-center justify-center">
+        <p className="text-sm text-white">
           برای استفاده از مطالب سایت، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست.
           تمام حقوق اين وب‌سايت نیز برای شرکت --- محفوظ است.
         </p>
